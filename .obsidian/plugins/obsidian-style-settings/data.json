@@ -28,5 +28,6 @@
   "anuppuccin-theme-settings-extended@@anp-theme-ext-dark": true,
   "anuppuccin-theme-settings-extended@@anp-theme-ext-amoled": true,
   "anuppuccin-theme-settings-extended@@catppuccin-theme-extended": "ctp-everforest-light",
-  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-rosepine-dark"
+  "anuppuccin-theme-settings-extended@@catppuccin-theme-dark-extended": "ctp-rosepine-dark",
+  "anuppuccin-theme-settings@@anp-h1-divider": true
 }
