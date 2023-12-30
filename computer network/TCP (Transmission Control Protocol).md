@@ -17,7 +17,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 <br>&nbsp;3) [client : SYNSENT → ESTABLISHED]  client는 server가 보낸 ACK을 받고 연결이 되었는다는 것을 알수있다. 그리고 server가 보낸 SYN에 대한 ACK을 보낸다.
 <br>&nbsp;4) [server : SYN RCVD → ESTABLISHED] client가 보낸 ACK을 받고 연결이 되었는다는 것을 알 수 있다.
 
-	**TCP connection일때 SYN의 sequence number를 랜덤하게 하는 이유는?**
+	**(*)TCP connection일때 SYN의 sequence number를 랜덤하게 하는 이유는?**
 	SYN의 sequence number를 예측할 수 있다면 attacker가 client인척하고 host에게 요청을 보내 server와 연결할 수 있다. 이후에는 attacker가 악의적인 데이터를 전송해 server애 피해를 줄 수 있다.
 
 <br>
@@ -30,7 +30,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 <br>&nbsp;4) [client : FIN_WAIT_2→ TIME_WAIT → CLOSED] server로 부터온 FIN메세지에 대한 ACK을 보내고 2MSL시간동안 기다린 뒤 CLOSED 상태가 된다.
 <br>&nbsp;5) [server : LAST_ACK → CLOSED ] client로 부터 ACK를 받으면 CLOSED상태가 된다.
 
-	**MSL을 설정하는 이유는?**
+	**(*)MSL을 설정하는 이유는?**
 	 MSL가 없으면 client가 보낸 ACK이 손실 된 경우 server의 timer가 timeout이 되어 다시 FIN을 보내도 응답할 client가 없어서 리소스를 낭비하게 된다.
 
 
