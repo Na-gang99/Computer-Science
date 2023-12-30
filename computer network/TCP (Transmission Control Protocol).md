@@ -11,7 +11,7 @@
 TCP에서는 `3-way handshake`를 통해 연결을 설정한다. 
 
 - Establishing TCP Connection
-  <img width="558" alt="threewayhandshake" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/880fe4d1-9f61-4dfd-a93f-42e4184382de">
+  <br><img width="558" alt="threewayhandshake" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/880fe4d1-9f61-4dfd-a93f-42e4184382de">
 1) [client : CLOSED -> SYNSENT] client는 server에 접속을 요청하기위해 SYN을 보낸다.
 2) [server : LISTEN → SYN RCVD] server는 client가 보낸 요청에 대한 ACK와 연결을 위한 SYN을 보낸다
 3) [client : SYNSENT → ESTABLISHED]  client는 server가 보낸 ACK을 받고 연결이 되었는다는 것을 알수있다. 그리고 server가 보낸 SYN에 대한 ACK을 보낸다.
@@ -23,7 +23,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 
 
 - Closing TCP Connection
-  <img width="558" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
+  <br><img width="558" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
 1) [client : ESTABLISHED → FIN_WAIT_1] 연결을 끊기위해 server로FIN을 보낸다. 
 2) [server : ESTABLISHED → CLOSE_WAIT FIN] 요청에 대한 ACK를 보내고 모든 data가 전달될때까지 기다린다.
 3) [server : CLOSE_WAIT → LAST_ACK] data를 다 보내고 연결을 끊기위해 client에게 FIN을 보낸다. 
