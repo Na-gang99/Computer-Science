@@ -20,7 +20,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 	**TCP connection일때 SYN의 sequence number를 랜덤하게 하는 이유는?**
 	SYN의 sequence number를 예측할 수 있다면 attacker가 client인척하고 host에게 요청을 보내 server와 연결할 수 있다. 이후에는 attacker가 악의적인 데이터를 전송해 server애 피해를 줄 수 있다.
 
-
+<br>
 
 - Closing TCP Connection
   <br><img width="558" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
