@@ -6,6 +6,7 @@
     - GBN와 같이 acknowledgement를 안받은 가장 오래된 segment에 대해 timer를 구동한다
     - SR과 같이 receiver에 buffer가 있어 timeout된 segment만 재전송한다.
 
+
 # 1. TCP : 3 way handshake
 TCP에서는 `3-way handshake`를 통해 연결을 설정한다. 
 
