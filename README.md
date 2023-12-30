@@ -4,8 +4,14 @@
 - 
 
 ## 2.  Computer Network
-- [TCP : 3 way handshake, 4 way handshake](https://github.com/Na-gang99/Computer-Science/blob/main/computer%20network/TCP%20-%203%20way%20handshake%2C%204%20way%20handshake.md)
-- UDP
+📚 [TCP](https://github.com/Na-gang99/Computer-Science/blob/main/computer%20network/TCP%20-%203%20way%20handshake%2C%204%20way%20handshake.md)
+- TCP : 3 way handshake
+- GO BACK N이란?
+- Selective repeat
+- Congestion Control
+- Flow Control
+
+📚 UDP
 ## 3.  Data Structure
 - 
 
