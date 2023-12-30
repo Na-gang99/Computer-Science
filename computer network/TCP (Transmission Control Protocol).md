@@ -10,7 +10,14 @@
 TCP에서는 `3-way handshake`를 통해 연결을 설정한다. 
 
 - Establishing TCP Connection
-<img width="558" alt="threewayhandshake" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/880fe4d1-9f61-4dfd-a93f-42e4184382de">
+	<img width="558" alt="threewayhandshake" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/880fe4d1-9f61-4dfd-a93f-42e4184382de">
+1) [client : CLOSED -> SYNSENT] client는 server에 접속을 요청하기위해 SYN을 보낸다.
+2) [server : LISTEN → SYN RCVD] server는 client가 보낸 요청에 대한 ACK와 연결을 위한 SYN을 보낸다
+3) [client : SYNSENT → ESTABLISHED]  client는 server가 보낸 ACK을 받고 연결이 되었는다는 것을 알수있다. 그리고 server가 보낸 SYN에 대한 ACK을 보낸다.
+4) [server : SYN RCVD → ESTABLISHED] client가 보낸 ACK을 받고 연결이 되었는다는 것을 알 수 있다.
+
+	**TCP connection일때 SYN의 sequence number를 랜덤하게 하는 이유는? 
+	SYN의 sequence number를 예측할 수 있다면 attacker가 client인척하고 host에게 요청을 보내 server와 연결할 수 있다. 이후에는 attacker가 악의적인 데이터를 전송해 server애 피해를 줄 수 있다.**
 
 
 - Closing TCP Connection
