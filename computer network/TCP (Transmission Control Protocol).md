@@ -23,7 +23,8 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 
 
 - Closing TCP Connection
-  	<img width="559" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
+  	<img width="558" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
+   
 1) [client : ESTABLISHED → FIN_WAIT_1] 연결을 끊기위해 server로FIN을 보낸다. 
 2) [server : ESTABLISHED → CLOSE_WAIT FIN] 요청에 대한 ACK를 보내고 모든 data가 전달될때까지 기다린다.
 3) [server : CLOSE_WAIT → LAST_ACK] data를 다 보내고 연결을 끊기위해 client에게 FIN을 보낸다. 
