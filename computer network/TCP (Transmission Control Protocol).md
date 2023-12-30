@@ -24,11 +24,11 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 
 - Closing TCP Connection
   <br><img width="558" alt="closing" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/9ff0fcb9-8a7c-49fc-b2b1-bfd324dd68ac">
-1) [client : ESTABLISHED → FIN_WAIT_1] 연결을 끊기위해 server로FIN을 보낸다. 
-2) [server : ESTABLISHED → CLOSE_WAIT FIN] 요청에 대한 ACK를 보내고 모든 data가 전달될때까지 기다린다.
-3) [server : CLOSE_WAIT → LAST_ACK] data를 다 보내고 연결을 끊기위해 client에게 FIN을 보낸다. 
-4) [client : FIN_WAIT_2→ TIME_WAIT → CLOSED] server로 부터온 FIN메세지에 대한 ACK을 보내고 2MSL시간동안 기다린 뒤 CLOSED 상태가 된다.
-5) [server : LAST_ACK → CLOSED ] client로 부터 ACK를 받으면 CLOSED상태가 된다.
+<br>&nbsp;1) [client : ESTABLISHED → FIN_WAIT_1] 연결을 끊기위해 server로FIN을 보낸다. 
+<br>&nbsp;2) [server : ESTABLISHED → CLOSE_WAIT FIN] 요청에 대한 ACK를 보내고 모든 data가 전달될때까지 기다린다.
+<br>&nbsp;3) [server : CLOSE_WAIT → LAST_ACK] data를 다 보내고 연결을 끊기위해 client에게 FIN을 보낸다. 
+<br>&nbsp;4) [client : FIN_WAIT_2→ TIME_WAIT → CLOSED] server로 부터온 FIN메세지에 대한 ACK을 보내고 2MSL시간동안 기다린 뒤 CLOSED 상태가 된다.
+<br>&nbsp;5) [server : LAST_ACK → CLOSED ] client로 부터 ACK를 받으면 CLOSED상태가 된다.
 
 	**MSL을 설정하는 이유는?**
 	 MSL가 없으면 client가 보낸 ACK이 손실 된 경우 server의 timer가 timeout이 되어 다시 FIN을 보내도 응답할 client가 없어서 리소스를 낭비하게 된다.
