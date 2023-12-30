@@ -10,6 +10,7 @@
 TCP에서는 `3-way handshake`를 통해 연결을 설정한다. 
 
 - Establishing TCP Connection
+<img width="558" alt="threewayhandshake" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/880fe4d1-9f61-4dfd-a93f-42e4184382de">
 
 
 - Closing TCP Connection
