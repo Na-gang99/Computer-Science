@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,8 +69,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "9f24b6c510207cf5",
@@ -86,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "README.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md"
+                "file": "README.md"
               }
             }
           }
@@ -150,9 +149,9 @@
   "active": "d21dbeff0f159ab8",
   "lastOpenFiles": [
     "threewayhandshake.png",
-    "무제 파일.md",
-    "computer network/TCP (Transmission Control Protocol).md",
     "README.md",
+    "computer network/TCP (Transmission Control Protocol).md",
+    "무제 파일.md",
     "system software/System Software List.md",
     "computer network/Computer Network List.md",
     "computer architecture/Computer Architecture List.md",
