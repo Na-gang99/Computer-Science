@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "eded11ddc865e770",
+        "id": "75fa376dc7db670c",
         "type": "tabs",
         "children": [
           {
-            "id": "4f139aad89e5bb06",
+            "id": "d21dbeff0f159ab8",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "computer network/Computer Network List.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -69,7 +65,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200.5
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9f24b6c510207cf5",
@@ -85,7 +82,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer network/Computer Network List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +98,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer network/Computer Network List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -124,9 +119,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "computer network/Computer Network List.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -146,18 +139,18 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "41a439a4793ab597",
+  "active": "d21dbeff0f159ab8",
   "lastOpenFiles": [
-    "data structure/Data Structure List.md",
+    "computer network/Computer Network List.md",
     "README.md",
+    "computer architecture/Computer Architecture List.md",
+    "data structure/Data Structure List.md",
     "system software/System Software List.md",
     "operating system/Operating System List.md",
     "development knowledge/git & github.md",
     "development knowledge/List.md",
     "development knowledge/obsidian 사용방법.md",
     "database/Database List.md",
-    "computer network/Computer Network List.md",
-    "computer architecture/Computer Architecture List.md",
     "system software",
     "operating system",
     "development knowledge",
