@@ -33,7 +33,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 	**(*)MSL을 설정하는 이유는?**
 	 MSL가 없으면 client가 보낸 ACK이 손실 된 경우 server의 timer가 timeout이 되어 다시 FIN을 보내도 응답할 client가 없어서 리소스를 낭비하게 된다.
 
-
+<br>
 # 2. GO BACK N이란?
 
 
