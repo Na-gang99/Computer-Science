@@ -65,6 +65,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 >5. buffer : receiver에서 수신한 segment을 임시로 저장한다.
 <br>
 <img width="667" alt="SR" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/b53f826b-907e-46a9-ab47-ffe057b0a231">
+<br>
 - [sender]
 <br>&nbsp;1) application에서 data가 내려오면 sequence number를 부여한다. window내에 있는 segment을 receiver에게 전송한다.
 <br>&nbsp;2) 모든 segment에 대해 timer를 구동한다.
