@@ -55,6 +55,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 - 장점 : 많은 양의 segment 전송이 가능하다.
 - 단점 : timeout이 되면 해당 segment 이후에 전송되었던 모든segment을 재전송하므로 불필요한 재전송이 발생한다.
 <br>
+
 # 3. Selective repeat(SR)이란?
 >Selective repeat(SR)
 >1.  timeout & retransmission : 지정한 시간안에 응답이 안오면 재전송을 한다.
