@@ -21,7 +21,7 @@
 # 4. TCP
 - TCP : 3 way handshake
 - GO BACK N이란?
-- Selective repeat
+- Selective repeat(SR)이란?
 - Congestion Control
 - Flow Control
 

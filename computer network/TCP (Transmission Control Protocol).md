@@ -78,11 +78,27 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 
 - 장점 : buffer를 사용하므로 불필요한 재전송이 발생하지 않는다.
 - 단점 : buffer를 사용하므로 속도가 느릴 수 있다.
-
-
-
+<br>
 
 # 4. Congestion Control
+> Congestion Control
+> 1. 목적 : router의 overflow를 막기위해 사용한다.
+> 2. 필요이유 : link가 공유되므로 한 router에 많은 packet이 모이게 되면 해당 router의 delay가 중가된다. 이로인해 loss가 발생할 수 있다.
+> 3. 방법 : cwnd를 조절하여 네트워크의 혼잡상태를 감지하고 적절한 송신 속도로 조절한다.
+
+- Slow Start 
+1) 시작은 1에서부터 시작하고 정상적 ack가 오면 increment =1로 하고 cwnd = cwnd + increment이다. timeout이나 duplicate ack이 발생하면 cwnd=1로 한다.
+
+- 문제점 : 빠르게 증가해서 congestion이 발생할 확률이 커진다. 
+
 
 # 5. Flow Control
+> Flow Control
+> 1. 목적 : receiver’s overflow를 막기위해 사용한다.
+> 2. 필요한 이유 : sender는 receiver의 버퍼상태를 알 수 없으므로 receiver의 처리하는 속도보다 sender가 더 많은 양의 segment를 보내게 되면 receiver buffer는 다 채워져 segment를 버리게 되어 손실이 발생한다. 손실이 발생되면 불필요한 응답과 데이터 전송이 일어날 수 있다.
+> 3. 방법 : receiver는 자신의 buffer에 남아있는 크기를 나타내는 rwnd값을 sender에게 전송하고 sender는 rwnd보다 작거나 같게 window크기를 조절한다. 
+>    rwnd = RcvBuffer - (LastByteRcvd - LastByteRead)
+
+![Flowcontrol 11-06-50](https://github.com/Na-gang99/Computer-Science/assets/155069538/1a5d8d8e-6582-49e4-9107-06e05e852c3e)
+
 
