@@ -1,8 +1,8 @@
-> TCP : 두 호스트를 연결하고 데이터 스트림을 교환하게 해주는 프로토콜이다.  
-> 1. reliable transport & in-order delivery : sender가 보낸 packet이 정상적으로 receiver에게 도착했는지 acknowledgement를 사용해서 알 수 있으므로 reliable하다. 그리고 packet이 순서대로 도착하지 않아도 sequence number를 사용해 순서를 맞출 수 있다. 
+> TCP : 두 호스트를 연결하고 바이트 스트림을 교환하게 해주는 프로토콜이다.  
+> 1. reliable transport & in-order delivery : sender가 보낸 segment이 정상적으로 receiver에게 도착했는지 acknowledgement를 사용해서 알 수 있으므로 reliable하다. 그리고 segment가 순서대로 도착하지 않아도 sequence number를 사용해 순서를 맞출 수 있다. 
 > 2. point-to-point : sender와 receiver간에 1대 1로 정보를 주고 받는다.
 > 3. full duplex service : 양방향 통신이 가능하다.
-> 4. pipelined
+> 4. pipelined : 여러 segment가 동시에 전송되어 대기 중인 data가 없을 때까지 기다리지 않고, segment를 연속해서 보낼 수 있다.
     - GBN와 같이 acknowledgement를 안받은 가장 오래된 segment에 대해 timer를 구동한다
     - SR과 같이 receiver에 buffer가 있어 timeout된 segment만 재전송한다.
 
@@ -35,9 +35,49 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 <br>
 
 # 2. GO BACK N이란?
+>GO BACK N
+>1. timeout & retransmission : 지정한 시간안에 응답이 안오면 재전송을 한다.
+>2. pipelined protocols : ACK를 받지 않아도 주어진 범위(window) 안에서는 segment을 여러개 보낼 수 있다.
+>3. cumulative ACK : 순서대로 수신하여할 다음 segment의 sequence number를 ACK number로 지정한다.
+>4.  sliding window : 윈도우 내에 있는 일부 패킷들을 전송하고, 이에 대한 ACK을 받으면 윈도우를 이동시켜서 더 많은 패킷을 전송할 수 있다. 
+<br>
+<img width="615" alt="GOBackN" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/4c7a8d17-8f81-4a2d-8010-42c1f847b408">
 
+- [sender]
+<br>&nbsp;1) window size가 N일때 N개의 segment은 ACK없이 보낼 수 있다.
+<br>&nbsp;2) 가장 오래 ACK를 받지않은 segment에 timer를 적용한다.
+<br>&nbsp;3) timeout전에 ACK가 오면 sliding window를 하고 다음 segment을 보낸다. timeout이 발생하면 해당 segment이후에 전송되었던 모든 segment들을 모두 재전송하고 window 범위내에서 전송할 segment들을 계속 전송한다.
 
+- [receiver]
+<br>&nbsp;1) 다음 segment의 sequence number를 ACK number로 보낸다
+<br>&nbsp;2) 순서대로 오지 않은 segment에 대한 ACK는 보내지 않고 loss된 segment에 대한 ACK을 보낸다.
+
+- 장점 : 많은 양의 segment 전송이 가능하다.
+- 단점 : timeout이 되면 해당 segment 이후에 전송되었던 모든segment을 재전송하므로 불필요한 재전송이 발생한다.
+<br>
 # 3. Selective repeat(SR)이란?
+>Selective repeat(SR)
+>1.  timeout & retransmission : 지정한 시간안에 응답이 안오면 재전송을 한다.
+>2. pipelined protocols : ACK를 받지 않아도 주어진 범위(window) 안에서는 segment을 여러개 보낼 수 있다.
+>3. ACK : 수신한 segment의 sequence number를 ACK number로 지정한다.
+>4. sliding window : 윈도우 내에 있는 일부 패킷들을 전송하고, 이에 대한 ACK을 받으면 윈도우를 이동시켜서 더 많은 패킷을 전송할 수 있다. 
+>5. buffer : receiver에서 수신한 segment을 임시로 저장한다.
+<br><img width="667" alt="SR" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/b53f826b-907e-46a9-ab47-ffe057b0a231">
+- [sender]
+<br>&nbsp;1) application에서 data가 내려오면 sequence number를 부여한다. window내에 있는 segment을 receiver에게 전송한다.
+<br>&nbsp;2) 모든 segment에 대해 timer를 구동한다.
+<br>&nbsp;3) ack가 도착했는데 만약 window의 맨앞 segment이라면 sliding window 을 한다.
+<br>&nbsp;4)timeout된 segment만 재전송하고 window 범위 내에서 전송할 segment들을 계속 전송한다.
+
+- [receiver]
+<br>&nbsp;1) 다음 segment의 sequence number를 ACK number로 보낸다
+<br>&nbsp;2) 순서대로 오지 않은 segment에 대한 ACK는 보내지 않고 loss된 segment에 대한 ACK을 보낸다.
+
+- 장점 : buffer를 사용하므로 불필요한 재전송이 발생하지 않는다.
+- 단점 : buffer를 사용하므로 속도가 느릴 수 있다.
+
+
+
 
 # 4. Congestion Control
 
