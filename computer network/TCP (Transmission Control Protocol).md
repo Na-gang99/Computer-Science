@@ -63,7 +63,8 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 >3. ACK : 수신한 segment의 sequence number를 ACK number로 지정한다.
 >4. sliding window : 윈도우 내에 있는 일부 패킷들을 전송하고, 이에 대한 ACK을 받으면 윈도우를 이동시켜서 더 많은 패킷을 전송할 수 있다. 
 >5. buffer : receiver에서 수신한 segment을 임시로 저장한다.
-<br><img width="667" alt="SR" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/b53f826b-907e-46a9-ab47-ffe057b0a231">
+<br>
+<img width="667" alt="SR" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/b53f826b-907e-46a9-ab47-ffe057b0a231">
 - [sender]
 <br>&nbsp;1) application에서 data가 내려오면 sequence number를 부여한다. window내에 있는 segment을 receiver에게 전송한다.
 <br>&nbsp;2) 모든 segment에 대해 timer를 구동한다.
