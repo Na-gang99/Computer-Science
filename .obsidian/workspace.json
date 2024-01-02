@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "9f24b6c510207cf5",
@@ -148,8 +149,10 @@
   },
   "active": "d21dbeff0f159ab8",
   "lastOpenFiles": [
-    "computer network/Computer Network List.md",
+    "무제 파일.canvas",
+    "2024-01-02.md",
     "computer network/TCP (Transmission Control Protocol).md",
+    "computer network/Computer Network List.md",
     "README.md",
     "threewayhandshake.png",
     "무제 파일.md",
