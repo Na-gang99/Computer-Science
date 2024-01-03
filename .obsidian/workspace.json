@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "67ca04e07339b03c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "operating system/운영체제 기본 개념.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -85,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "operating system/운영체제 기본 개념.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "operating system/운영체제 기본 개념.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md"
+                "file": "operating system/운영체제 기본 개념.md"
               }
             }
           }
@@ -146,15 +159,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "d21dbeff0f159ab8",
+  "active": "67ca04e07339b03c",
   "lastOpenFiles": [
+    "computer network/TCP (Transmission Control Protocol).md",
+    "operating system/운영체제 기본 개념.md",
     "무제 파일.canvas",
     "2024-01-02.md",
-    "computer network/TCP (Transmission Control Protocol).md",
     "computer network/Computer Network List.md",
     "README.md",
     "threewayhandshake.png",
-    "무제 파일.md",
     "system software/System Software List.md",
     "computer architecture/Computer Architecture List.md",
     "data structure/Data Structure List.md",
