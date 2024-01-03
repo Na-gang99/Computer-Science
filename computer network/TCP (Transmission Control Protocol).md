@@ -91,19 +91,20 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 > - 문제점 : 빠르게 증가해서 congestion이 발생할 확률이 커진다. 
 
 - Congestion Avoidance 
->- cwnd < ssthresh이면 slow start 작동한다
->- cwnd ≥ ssthresh이면 매 RTT가 끝날 때마다 cwnd는 1씩 증가한다.
+>- 조건1 cwnd < ssthresh이면 slow start 작동한다
+>- 조건2 cwnd ≥ ssthresh이면 매 RTT가 끝날 때마다 cwnd는 1씩 증가한다.
 >- timeout이나 duplicate ack이 발생하면 ssthresh = cwnd/2로 하고 cwnd=1이다.
->- 문제점 : 다시 cwnd가 1부터 시작하므로 낭비가 심하다.
+>- 문제점 : 다시 cwnd가 1부터 시작하므로 비효율적일 수 있다.
 <br>
 <img width="744" alt="tahoe" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/71d411fa-31e1-4763-ad52-4479e4b9efc0">
 <br>
 
 - Fast Recovery
->- cwnd < ssthresh이면 slow start 작동한다
->- cwnd ≥ ssthresh이면 매 RTT가 끝날 때마다 cwnd는 1씩 증가한다.
+>- 조건1 cwnd < ssthresh이면 slow start 작동한다
+>- 조건2 cwnd ≥ ssthresh이면 매 RTT가 끝날 때마다 cwnd는 1씩 증가한다.
 >- timeout이된 경우 ssthresh = cwnd/2로 하고 cwnd=1이다.
 >- 3 duplicate ack이 된 경우 ssthresh = cwnd/2로 하고 cwnd=cwnd/2+3이다.
+>- cwnd=1에서 시작하는 것보다 패킷 손실로부터 빠르게 회복할 수 있도록 한다.
 <br>
 <img width="587" alt="Reno" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/3e784500-f12c-4275-ab95-09bd398e4c95">
 <br>
