@@ -98,6 +98,7 @@ TCP에서는 `3-way handshake`를 통해 연결을 설정한다.
 <br>
 <img width="744" alt="tahoe" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/71d411fa-31e1-4763-ad52-4479e4b9efc0">
 <br>
+
 - Fast Recovery
 >- cwnd < ssthresh이면 slow start 작동한다
 >- cwnd ≥ ssthresh이면 매 RTT가 끝날 때마다 cwnd는 1씩 증가한다.
