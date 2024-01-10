@@ -4,35 +4,22 @@
     "type": "split",
     "children": [
       {
-        "id": "ddb8f033a2a2c7cd",
+        "id": "6e028fe73d8b80ac",
         "type": "tabs",
         "children": [
           {
-            "id": "54531311ff664da1",
+            "id": "e9b0b24af0b3354f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "computer network/TCP (Transmission Control Protocol).md",
+                "file": "database/무제 파일.md",
                 "mode": "source",
                 "source": false
               }
             }
-          },
-          {
-            "id": "baabe6118cd18355",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md",
-                "mode": "preview",
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md",
+                "file": "database/무제 파일.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md",
+                "file": "database/무제 파일.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md"
+                "file": "database/무제 파일.md"
               }
             }
           }
@@ -159,8 +146,9 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "baabe6118cd18355",
+  "active": "e9b0b24af0b3354f",
   "lastOpenFiles": [
+    "database/무제 파일.md",
     "computer network/TCP (Transmission Control Protocol).md",
     "computer network/UDP(User Datagram Protocol).md",
     "README.md",
