@@ -1,3 +1,4 @@
+# 0.UDP
 > UDP : 데이터그램을 사용하여 통신하는 비연결형 프로토콜이다.
 > 1. connectionless and unreliable data transfer : 연결을 설정하지 않으므로 데이터의 손실이 발생해도 오류 복구 메커니즘이 없다. unreliable을 해결하고 싶다면 application layer에서 RTP를 이용해 순서를 맞춰서 손실된 것을 회복해줄 수 있다.
 > 2. unordered delivery : 데이터는 순서대로 도착하지 않을 수 있다.
@@ -9,7 +10,7 @@
 <br>
 <br>
 
-# Checksum 
+# 1.Checksum 
 - architecture
 <br>&nbsp;1) pseudo header : network layer의 정보를 가져와서 가상의 헤더이다.
     - zero : 0을 넣는다
