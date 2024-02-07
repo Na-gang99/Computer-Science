@@ -31,8 +31,7 @@
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -98,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md",
+                "file": "computer network/Computer Network List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md",
+                "file": "computer network/Computer Network List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "computer network/UDP(User Datagram Protocol).md"
+                "file": "computer network/Computer Network List.md"
               }
             }
           }
@@ -159,12 +158,12 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "028d8d50353b7e2e",
+  "active": "71b4c94b2572e87c",
   "lastOpenFiles": [
-    "computer network/TCP (Transmission Control Protocol).md",
-    "computer network/Computer Network List.md",
-    "computer network/Network Layer Model.md",
     "computer network/UDP(User Datagram Protocol).md",
+    "computer network/Network Layer Model.md",
+    "computer network/Computer Network List.md",
+    "TCP (Transmission Control Protocol).md",
     "database/Database List.md",
     "operating system/Operating System List.md",
     "operating system/운영체제 기본 개념.md",
