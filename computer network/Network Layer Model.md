@@ -1,4 +1,4 @@
-## 0. 계층 모델
+## 0. Layer Model
 
 <img width="692" alt="02" src="https://github.com/Na-gang99/Computer-Science/assets/155069538/12734d66-331f-4f41-aaa5-34833fad10e3">
 
