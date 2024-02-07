@@ -18,8 +18,21 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "028d8d50353b7e2e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "computer network/Computer Network List.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -146,14 +159,15 @@
       "command-palette:명령어 팔레트 열기": false
     }
   },
-  "active": "71b4c94b2572e87c",
+  "active": "028d8d50353b7e2e",
   "lastOpenFiles": [
-    "computer network/TCP (Transmission Control Protocol).md",
+    "computer network/Network Layer Model.md",
     "computer network/Computer Network List.md",
+    "computer network/TCP (Transmission Control Protocol).md",
+    "computer network/UDP(User Datagram Protocol).md",
     "database/Database List.md",
     "operating system/Operating System List.md",
     "operating system/운영체제 기본 개념.md",
-    "computer network/UDP(User Datagram Protocol).md",
     "database/무제 파일.md",
     "README.md",
     "무제 파일.canvas",
